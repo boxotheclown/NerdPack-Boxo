@@ -1,0 +1,7 @@
+## Title: Boxo's Arms
+## Notes: Trying to optimize new arms
+## Dependencies: NerdPack
+## Interface: 70100
+## Author: Boxo
+
+Boxo.lua
