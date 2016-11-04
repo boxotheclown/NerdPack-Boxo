@@ -37,7 +37,7 @@ local ST = {
 	{'Focused Rage', 'player.buff(Battle Cry)'}, 										-- focused Rage in battle cry
 	{'Focused Rage', 'player.rage>75'},			 										-- Focused Rage Dump
 	{'Colossus Smash'}, 																-- Colossus Smash
-	{'Warbreaker', '!targer.debuff(Colossus Smash)'}, 									-- Warbreaker (if target not debuffed by Colossus Smash debuff)
+	{'Warbreaker', '!target.debuff(Colossus Smash)'}, 									-- Warbreaker (if target not debuffed by Colossus Smash debuff)
 	{'Focused Rage', 'player.buff(Shattered Defenses)&!player.buff(Focused Rage)'}, 	-- Focused Rage for shattered defenses mortal strike
 	{'Execute', 'player.buff(Ayala\'s Stone Heart)'}, 									-- execute with legendary
 	{'Mortal Strike'}, 																	-- Mortal Strike (regardless of stacks of focused rage)
