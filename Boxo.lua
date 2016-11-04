@@ -39,9 +39,9 @@ local ST = {
 	{'Colossus Smash'}, 																-- Colossus Smash
 	{'Warbreaker', '!targer.debuff(Colossus Smash)'}, 									-- Warbreaker (if target not debuffed by Colossus Smash debuff)
 	{'Focused Rage', 'player.buff(Shattered Defenses)&!player.buff(Focused Rage)'}, 	-- Focused Rage for shattered defenses mortal strike
-	{'Overpower', 'talent(1,2)'}, 														-- overpower if talented
 	{'Execute', 'player.buff(Ayala\'s Stone Heart)'}, 									-- execute with legendary
 	{'Mortal Strike'}, 																	-- Mortal Strike (regardless of stacks of focused rage)
+	{'Overpower', 'talent(1,2)'}, 														-- overpower if talented
 	{'Rend', 'talent(3,2)&target.debuff(Rend).remains<=4.5'}, 							-- rend if about to fall off
 	{'Whirlwind', 'talent(3,1)&player.buff(Battle Cry)'}, 								-- whirlwind with fervor talent and battle cry
 	{'Slam', 'player.buff(Battle Cry)'}, 												-- Slam with battle cry 
