@@ -63,9 +63,9 @@ local Interrupts = {
 local inCombat = {
 	{Keybinds},
 	{Interrupts, 'target.interruptAt(50)&toggle(interrupts)&target.infront&target.range<=8'},
-	{Cooldowns},
+	{Cooldowns, 'target.range<8&toggle(cooldowns)'},
 	{Survival},
-	{AoE, 'toggle(aoe)'},
+	{AoE, 'target.range<8&toggle(aoe)'},
 	{Execute, 'target.range<8&target.infront&target.health<=20'},
 	{ST, 'target.range<8&target.infront&target.health>20'}
 }
