@@ -16,7 +16,9 @@ local AoE = {
 	{'Focused Rage', 'talent(5,3)&player.rage>75'},										-- Focused Rage Dump
 	{'Warbreaker', 'spell(Bladestorm).cooldown<gcd'}, 									-- Warbreaker (if Bladestorm is off Cooldown)
 	{'Bladestorm', 'spell(Warbreaker).cooldown'}, 										-- Bladestorm after warbreaker
+	{'Cleave', 'player.area(6).enemies>=7'},
 	{'Cleave', '!player.buff(Cleave)'}, 												-- Cleave
+	{'Whirlwind', 'player.area(6).enemies>=7'},
 	{'Whirlwind', 'player.buff(Cleave)'},
 	{'Colossus Smash'}, 																-- Colossus Smash
 	{'Execute', 'player.buff(Shattered Defenses)&target.health<=20'},					-- Execute (if Shattered Defense is up)
@@ -37,16 +39,16 @@ local Execute = {
 local ST = {
 	{'Focused Rage', 'talent(5,3)&player.buff(Battle Cry)'}, 										-- focused Rage in battle cry
 	{'Focused Rage', 'talent(5,3)&player.rage>75'},			 										-- Focused Rage Dump
-	{'Colossus Smash'}, 																-- Colossus Smash
+	{'Colossus Smash', '!player.buff(Shattered Defenses)'}, 							-- Colossus Smash
 	{'Warbreaker', '!target.debuff(Colossus Smash)'}, 									-- Warbreaker (if target not debuffed by Colossus Smash debuff)
-	{'Focused Rage', 'talent(5,3)&player.buff(Shattered Defenses)&!player.buff(Focused Rage)'}, 	-- Focused Rage for shattered defenses mortal strike
+	{'Focused Rage', 'player.buff(Shattered Defenses)&!player.buff(Focused Rage)'}, 	-- Focused Rage for shattered defenses mortal strike
 	{'Execute', 'player.buff(Ayala\'s Stone Heart)'}, 									-- execute with legendary
 	{'Mortal Strike'}, 																	-- Mortal Strike (regardless of stacks of focused rage)
 	{'Overpower', 'talent(1,2)'}, 														-- overpower if talented
 	{'Rend', 'talent(3,2)&target.debuff(Rend).remains<=4.5'}, 							-- rend if about to fall off
 	{'Whirlwind', 'talent(3,1)&player.buff(Battle Cry)'}, 								-- whirlwind with fervor talent and battle cry
 	{'Slam', 'player.buff(Battle Cry)'}, 												-- Slam with battle cry 
-	{'Whirlwind', 'talent(3.1)&player.rage>32'},										-- whirlwind with fervor talent dump
+	{'Whirlwind', 'talent(3,1)&player.rage>32'},										-- whirlwind with fervor talent dump
 	{'Slam', 'player.rage>32'}, 														-- Slam dump
 }
 
