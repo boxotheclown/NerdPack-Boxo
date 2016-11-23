@@ -2,8 +2,8 @@ local GUI = {
 	{type = 'header', text = 'Keybinds:'},
 	{type = 'text', text = 'Alt: Pause'},
 	{type = 'text', text = 'Ctrl: Heroic Leap'},
-	{type = 'text', text = 'Middle Mouse: WarStorm'},
-	{type = 'checkbox', text = 'Check for Battle Cry in standard Rotation', key = 'BC_Standard', default= false},
+--	{type = 'text', text = 'Middle Mouse: WarStorm'},
+--	{type = 'checkbox', text = 'Check for Battle Cry in standard Rotation', key = 'BC_Standard', default= false},
 }
 
 function exeOnLoad()
